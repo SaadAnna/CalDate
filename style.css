@@ -1,0 +1,239 @@
+*{
+    padding: 10px;
+    margin: 0;
+}
+body{
+    color: white;
+    background: rgb(4, 90, 143);
+    justify-content: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    margin: auto 0 ;
+    
+}
+.container{
+display: inline;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.container .parent{
+    display: inline ;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+}
+.container .parent h2{
+
+    margin-top: 80px;
+    color: white;
+    font-weight: 800;
+    font-size: 45px;
+    font-family: "Poppins", serif;
+
+}
+.container .parent .information{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 150px;
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    margin: auto;
+    margin-top: 150px;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+.container .parent .information .FirstDate{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: start;
+    text-align: start;
+    margin: auto;
+}
+.container .parent .information .FirstDate label{
+    color: black;
+    font-weight: 700;
+    font-family: "Poppins", serif;
+    font-size: 17px;
+    margin: auto;
+}
+.container .parent .information .SecondDate label{
+    color: black;
+    font-weight: 700;
+    font-family: "Poppins", serif;
+    font-size: 17px;
+    margin: auto;
+}
+.container .parent .information .FirstDate input{
+    width: 240px;
+    height: 70px;
+    border: solid 1px black;
+    border-radius: 4px;
+    font-family: "Poppins", serif;
+    font-size: 14px;
+}
+.container .parent .information .SecondDate input{
+    width: 240px;
+    height: 70px;
+    border: solid 1px black;
+    border-radius: 4px;
+    font-family: "Poppins", serif;
+    font-size: 14px;
+    margin: auto;
+}
+#Invalid_result{
+  font-weight: 700;
+    font-family: "Poppins", serif;
+    font-size: 17px;
+    margin: auto;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: center;
+    display: none;
+}
+#Error_result{
+  font-weight: 700;
+    font-family: "Poppins", serif;
+    font-size: 17px;
+    margin: auto;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+    justify-content: center;
+    display: none;
+}
+
+.container .parent .information .SecondDate{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    text-align: start;
+}
+.animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+    gap: 4px;
+    padding: 18px 35px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 2px rgb(255, 255, 255);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: rgb(255, 255, 255);
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .arr-1 {
+    right: 16px;
+  }
+  
+  .animated-button .arr-2 {
+    left: -25%;
+  }
+  
+  .animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 38, 135);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .text {
+    position: relative;
+    z-index: 1;
+    color: white;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #ffffff;
+    border-radius: 12px;
+  }
+  
+  .animated-button:hover .arr-1 {
+    right: -25%;
+  }
+  
+  .animated-button:hover .arr-2 {
+    left: 16px;
+  }
+  
+  .animated-button:hover .text {
+    transform: translateX(12px);
+  }
+  
+  .animated-button:hover svg {
+    fill: #ffffff;
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px rgb(255, 255, 255);
+  }
+  
+  .animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+  
+ /* @media screen and (min-width: 800px) {
+    .container .parent .information{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      gap: 150px;
+      width: fit-content;
+      height: 200px;
+      background-color: rgb(217, 15, 15);
+      padding: 3px;
+      border-radius: 10px;
+      border: none;
+      margin: auto;
+      margin-top: 150px;
+      box-shadow: 3px 3px 5px rgb(197, 195, 195);
+  }
+  }
+  

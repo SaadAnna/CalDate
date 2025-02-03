@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days Between Two Dates</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+<body>
+<div class="container">
+<div class="parent">
+  <h2>Calculate Days Between Two Dates
+
+  </h2>
+  <div class="information">
+  <div class="FirstDate">
+     <label for="date1">Enter First Date (Today):</label>
+    <input type="date" id="date1">
+  </div>
+  <div class="SecondDate">
+    <label for="date2">Enter Second Date (Appointment):</label>
+    <input type="date" id="date2">
+  </div>
+
+  </div>
+ <!-- From Uiverse.io by gharsh11032000 --> 
+<button onclick="calculateDays()" class="animated-button">
+  <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+  <span class="text">Claculate</span>
+  <span class="circle"></span>
+  <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+</button>
+<h4 id="Invalid_result">Please enter valid dates.</h4>
+<h4 id="Error_result"> Error: The appointment date must be in the future.</h4>
+
+  <h4 id="result"></h4>
+
+   
+</div>
+
+</div>
+  
+
+    <script src="index.js"></script>
+</body>
+</html>
